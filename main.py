@@ -24,11 +24,16 @@ async def shorten_url(request: Request, long_url: str = Form(...)):
     entry = new_url_entry(long_url)
     db.urls.insert_one(entry)
     short_code = entry["short_code"]
-    return templates.TemplateResponse("dashboard.html", {
-        "request": request,
-        "short_code": short_code,
-        "long_url": long_url,
-        "timestamps": []
+host = request.url.scheme + "://" + request.url.hostname
+short_url = f"{host}/{short_code}"
+
+return templates.TemplateResponse("dashboard.html", {
+    "request": request,
+    "short_code": short_code,
+    "short_url": short_url,
+    "long_url": long_url,
+    "timestamps": []
+
     })
 
 # GET: Redirect by short code

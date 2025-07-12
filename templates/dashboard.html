@@ -20,10 +20,8 @@
     {% if short_code %}
       <div class="result-box">
         <p><strong>Short URL:</strong> 
-          <a href="/{{ short_code }}" target="_blank">
-            {{ request.url.scheme }}://{{ request.url.hostname }}:{{ request.url.port }}/{{ short_code }}
-          </a>
-        </p>
+  <a href="{{ short_url }}" target="_blank">{{ short_url }}</a>
+</p>
         <p><strong>Original:</strong> 
           <a href="{{ long_url }}" target="_blank">{{ long_url }}</a>
         </p>
