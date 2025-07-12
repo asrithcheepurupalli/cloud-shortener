@@ -1,0 +1,70 @@
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.shorten-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.shorten-form input {
+  flex: 1;
+  padding: 0.6rem;
+  font-size: 1rem;
+}
+
+.shorten-form button {
+  background: #0070f3;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.shorten-form button:hover {
+  background: #005ac1;
+}
+
+.result-box {
+  background: #f0f7ff;
+  padding: 1rem;
+  border: 1px solid #b3d4fc;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+canvas {
+  margin-top: 1rem;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
